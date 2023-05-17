@@ -9,7 +9,6 @@ class ListaDeCompras:
         self.lista_quantidade.append(quantidade)
 
     def remover_itens(self, produto):
-
         if len(self.lista_compras) > 0:
             try:
                 para_excluir = self.lista_compras.index(produto)
@@ -20,17 +19,14 @@ class ListaDeCompras:
 
     def listar_itens(self):
         if self.tamanho_das_listas() > 0:
-
             produto = 'Produto'
             quantidade = 'Quantidade'
-
             print(f'\n{produto:20}     {quantidade}')
 
             for indice in range(len(self.lista_compras)):
                 produto = self.lista_compras[indice]
                 quantidade = self.lista_quantidade[indice]
                 print(f'{produto:20}        {quantidade}')
-
         else:
             print('\nSua lista está vazia! Não há o que mostrar.')
 
@@ -63,7 +59,6 @@ def controle_interface():
     comando_valido = False
 
     while comando_valido is False:
-
         try:
             comando = int(input('\nDigite [1] para adicionar itens a sua lista.\n'
                                 'Digite [2] para remover itens da sua lista.\n'
@@ -92,13 +87,13 @@ while resp != 'Sair':
     resp = controle_interface()
 
     if resp == 1:
+        
         while True:
             item = input('\nDigite qual produto vai ser adicionado: ')
             if all(caracter.isalpha() or caracter.isspace() for caracter in item):
                 break
             else:
                 print('Seu nome de produto só pode conter letras ou espaços!')
-
         try:
             quant_item = int(input('Digite a quantidade do produto: '))
         except ValueError:
