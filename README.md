@@ -1,6 +1,6 @@
 # Lista de Compras Pythonica
 
-[![NPM](https://img.shields.io/npm/l/react)](https://github.com/GitAlves/jogo-da-forca-pythonico/blob/main/LICENSE)
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/GitAlves/lista-de-compras-pythonica/blob/main/LICENSE)
 
 ## Sobre o projeto
 
